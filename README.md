@@ -16,6 +16,7 @@ A template for automated data- & resource-pack publishing.
    git tag v1.0.0
    git push origin v1.0.0
    ```
-   This wil automatically create a new release including all files inside a `release.zip`
+   This will automatically create a new release including all files inside a `release.zip`.
+   If you want to use a custom name for the release-candidate specify it inside the `pack.mcmeta` under `.pack.name`.
 
 <!-- b299250 -->
