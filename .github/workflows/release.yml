@@ -1,4 +1,4 @@
-name: CI
+name: Release
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
           
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
 
-      - name: Run a zip script
+      - name: Zip all files
         run: |
           zip -r ${{ steps.meta.outputs.name }}.zip . -x ".*"
 
